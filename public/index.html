@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notion Contact Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Notion Contact Form</h1>
+            <h2>Contacts</h2>
+        </header>
+        <main>
+            <form id="add-contact" method="POST">
+                <p>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Type your name"
+                    />
+                </p>
+                <p>
+                    <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        placeholder="your@example.com"
+                    />
+                </p>
+                <p>
+                    <input
+                        type="text"
+                        name="phone"
+                        id="phone"
+                        placeholder="(99) 99 99999-9999"
+                    />
+                </p>
+                <p>
+                    <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Type your message"
+                    ></textarea>
+                </p>
+                <p>
+                    <button type="submit" id="btn-submit">Add Contact</button>
+                </p>
+            </form>
+            <div id="loading">Loading...</div>
+            <div id="contact-list"></div>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>
